@@ -1,14 +1,70 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang = "en-US">
+ <head>
 
-<form oninput="x.value">
-<input type="text" id="a">
-<input type="number" id="b" value="50">
-=<output ="a"></output>
-</form>
+ </head>
+ <body>
 
-<p><strong>Note:</strong> The output tag is not supported in Internet Explorer.</p>
+Change these:<br>
+<textarea id="myTextarea">
+  Luke Stoutenburg
+</br>
+  Project Manager
+</textarea>
 
-</body>
+
+<p>Click the button to get your email siggy.</p>
+
+<button type="button" onclick="myFunction()"; onclick=myFunctions()"">Gimmie Email Signature</button>
+
+
+</br>
+</br>
+</br>
+
+<table border="0" cellpadding="0" width="450" style="table-layout:fixed">
+  <tbody>
+    <tr>
+      <td class="logo-td" align="left" valign="middle" width="90">
+        <p style="margin-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 10px; line-height: 12px; margin-bottom: 10px;">
+          <a style="text-decoration:none" href="http://www.inmunited.com" class="clink logo-container">
+              <img src="https://htmlsigs.s3.amazonaws.com/logos/files/000/383/548/landscape/66540__1_.png" alt="INM United" border="0" class="sig-logo" height="80" width="80">
+          </a>
+        </p>
+      </td>
+      <td align="left" class="content-td" nowrap="nowrap" width="370">
+        <p style="font-family: Helvetica, Arial, sans-serif; font-size: 10px; line-height: 12px; color: rgb(33, 33, 33); margin-bottom: 10px;">
+          <span id="Title" style="font-weight: bold; color: rgb(33, 33, 33); display: inline;" class="txt signature_name-target sig-hide"></p></span>
+        <span class="email-sep break" style="display: inline;"></span>
+        <p style="font-family: Helvetica, Arial, sans-serif; font-size: 10px; line-height: 12px; margin-bottom: 10px;">
+          <span style="font-weight: bold; color: rgb(33, 33, 33); display: inline;" class="txt signature_companyname-target sig-hide">INM United</span>
+          <span class="company-sep break" style="display: inline;"><br></span>
+          <span class="address-sep break"></span> <span style="color: rgb(33, 33, 33); display: inline;" class="txt signature_address-target sig-hide">1805 Highpoint Ave</span>
+          <span class="address2-sep break" style="display: block;"></span> <span style="color: rgb(33, 33, 33); display: inline;" class="txt signature_address2-target sig-hide">Richmond, VA 23230</span>
+          <span class="website-sep break" style="display: inline;"><br></span>
+          <a class="link signature_website-target sig-hide" href="http://www.inmunited.com" style="color: rgb(239, 90, 38); text-decoration: none; display: inline;">www.inmunited.com</a>
+        </p>
+        <p class="social-list" style="font-size: 0px; line-height: 0; font-family: Helvetica, Arial, sans-serif;">
+        </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTextarea").value;
+        document.getElementById("Name").innerHTML = x;
+    }
+    </script>
+
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTextarea").value;
+        document.getElementById("Title").innerHTML = x;
+    }
+    </script>
+
+
+ </body>
 </html>
